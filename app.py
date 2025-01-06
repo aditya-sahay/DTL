@@ -10,8 +10,9 @@ from publisher import publish_data
 
 # Flask app setup
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SECRET_KEY']='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByeGVieG52ZnNmYXlobmpvYnFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYxMzg5MjcsImV4cCI6MjA1MTcxNDkyN30.WRo-tehxn-YvWLsG1MhHtD5h86kFx9DTPfxa-qmVRIY'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'https://prxebxnvfsfayhnjobqm.supabase.co'
 
 db.init_app(app)
 login_manager = LoginManager()
